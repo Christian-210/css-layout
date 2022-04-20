@@ -1,6 +1,7 @@
 body,
 html {
   margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 h2 {
@@ -28,6 +29,10 @@ h2 {
     inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
 
+.zone:hover > img {
+  transform: rotate(12deg);
+}
+
 /* Header Styles */
 nav {
   width: 100%;
@@ -35,6 +40,9 @@ nav {
   justify-content: space-between;
   padding: 24px;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav ul {
@@ -57,7 +65,7 @@ nav a {
 }
 
 /* Red Section Styles */
-section.red {
+section.cover-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,20 +75,24 @@ section.red {
   padding: 24px;
 }
 
+.cover {
+  width: 30rem;
+}
+
 /* Blue Project Section Styles */
-section.blue {
+section.light-purple {
   color: #fff;
   padding: 40px 24px 100px;
 }
 
-section.blue h2 {
+section.light-purple h2 {
   text-align: center;
   font-size: 3em;
   font-weight: 100;
   margin: 40px auto 60px;
 }
 
-section.blue .container {
+section.light-purple .container {
   max-width: 1800px;
   display: grid;
   gap: 20px;
@@ -92,7 +104,7 @@ section.blue .container {
   margin: auto;
 }
 
-section.blue .project {
+section.light-purple .project {
   background-color: #3d3d3d;
   display: flex;
   align-items: center;
@@ -101,8 +113,9 @@ section.blue .project {
   height: 400px;
 }
 
-section.blue .project img {
+section.light-purple .project img {
   width: 150px;
+  transition: 0.2s all ease-in-out;
 }
 
 /* Footer Styles */
@@ -116,6 +129,15 @@ footer {
   font-size: 1.4rem;
   padding: 24px;
   box-sizing: border-box;
+  background-color: #3d3d3d;
+}
+
+.dark-purple {
+  background-color: #261f98;
+}
+
+.light-purple {
+  background-color: #6c63ff;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
