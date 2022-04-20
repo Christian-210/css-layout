@@ -1,0 +1,296 @@
+body,
+html {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.zone {
+  padding: 30px 50px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+.zone:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+/* Header Styles */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  gap: 36px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Red Section Styles */
+section.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: #fff;
+  font-size: 3rem;
+  padding: 24px;
+}
+
+/* Blue Project Section Styles */
+section.blue {
+  color: #fff;
+  padding: 40px 24px 100px;
+}
+
+section.blue h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 100;
+  margin: 40px auto 60px;
+}
+
+section.blue .container {
+  max-width: 1800px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(calc((1800px / 4) - 20px), 1fr)
+  );
+  grid-template-rows: 1fr;
+  margin: auto;
+}
+
+section.blue .project {
+  background-color: #3d3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 400px;
+}
+
+section.blue .project img {
+  width: 150px;
+}
+
+/* Footer Styles */
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 3rem;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green {
+  background: #56b870; /* Old browsers */
+  background: -moz-linear-gradient(top, #56b870 0%, #a5c956 100%); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #56b870),
+    color-stop(100%, #a5c956)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    #56b870 0%,
+    #a5c956 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    #56b870 0%,
+    #a5c956 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #56b870 0%, #a5c956 100%); /* IE10+ */
+  background: linear-gradient(top, #56b870 0%, #a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red {
+  background: #c655be; /* Old browsers */
+  background: -moz-linear-gradient(top, #c655be 0%, #cf0404 100%); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #c655be),
+    color-stop(100%, #cf0404)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    #c655be 0%,
+    #cf0404 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    #c655be 0%,
+    #cf0404 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c655be 0%, #cf0404 100%); /* IE10+ */
+  background: linear-gradient(top, #c655be 0%, #cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow {
+  background: #f3aaaa; /* Old browsers */
+  background: -moz-linear-gradient(top, #f3aaaa 0%, #febf04 100%); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #f3aaaa),
+    color-stop(100%, #febf04)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    #f3aaaa 0%,
+    #febf04 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    #f3aaaa 0%,
+    #febf04 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f3aaaa 0%, #febf04 100%); /* IE10+ */
+  background: linear-gradient(top, #f3aaaa 0%, #febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue {
+  background: #7abcff; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #7abcff 0%,
+    #60abf8 44%,
+    #4096ee 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #7abcff),
+    color-stop(44%, #60abf8),
+    color-stop(100%, #4096ee)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    #7abcff 0%,
+    #60abf8 44%,
+    #4096ee 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    #7abcff 0%,
+    #60abf8 44%,
+    #4096ee 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    #7abcff 0%,
+    #60abf8 44%,
+    #4096ee 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    top,
+    #7abcff 0%,
+    #60abf8 44%,
+    #4096ee 100%
+  ); /* W3C */
+}
+
+/* Toggle Button */
+
+.project-toggle {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.toggle-button {
+  margin-left: auto;
+  max-width: 250px;
+  background: #fff;
+  position: relative;
+  text-align: center;
+  right: 24px;
+  bottom: 24px;
+  border-radius: 48px;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
+}
+
+.toggle-button a {
+  padding: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  nav ul li:last-child {
+    margin-left: 0;
+  }
+}
